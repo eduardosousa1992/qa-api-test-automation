@@ -13,7 +13,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code é 200\", () => { pm.response.to.have.status(200); });"
+							"pm.test(\"Status code é 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {},
@@ -32,14 +34,15 @@
 					}
 				],
 				"url": {
-					"raw": "https://fakestoreapi.com/products",
+					"raw": "https://jsonplaceholder.typicode.com/posts",
 					"protocol": "https",
 					"host": [
-						"fakestoreapi",
+						"jsonplaceholder",
+						"typicode",
 						"com"
 					],
 					"path": [
-						"products"
+						"posts"
 					]
 				}
 			},

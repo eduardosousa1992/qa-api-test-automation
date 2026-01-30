@@ -5,8 +5,7 @@ Funcionalidade: Gestão de Produtos
   Quero consultar a lista de produtos
   Para verificar se o catálogo está atualizado
 
-  Cenário: CT001 - Consultar todos os produtos com sucesso
-    Dado que eu tenha acesso à API da Fake Store
-    Quando eu fizer uma requisição GET para "/products"
+Cenário: CT001 - Consultar posts com sucesso
+    Dado que eu tenha acesso à API JSONPlaceholder
+    Quando eu fizer uma requisição GET para "/posts"
     Então o status code deve ser 200
-    E a resposta deve conter uma lista de produtos
